@@ -1,8 +1,23 @@
 import React from 'react'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
-const CardUser = ({user,change}) => {
+const CardUser = ({}) => {
 
-    
+    const [user, setUser] = useState()
+    const [change, setChange] = useState(true)
+
+
+    useEffect(() => {
+        const url = 'https://randomuser.me/api/'
+        axios.get(url)
+            .then(res => setUser(res.data.results[0]))
+            .catch(error => console.log(error))
+    }, [change])
+
+    const changeUser = () => {
+        setChange(!change)
+    }
 
 
     return (
@@ -18,7 +33,7 @@ const CardUser = ({user,change}) => {
             </div>
 
             <div className='button-change'>
-                <button onClick={change}>
+                <button onClick={changeUser}>
                     <ion-icon name="refresh-outline"></ion-icon>
                 </button>
 
