@@ -1,0 +1,57 @@
+.App{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.CardUser{
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  box-shadow: 5px 5px 5px lightgray;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 0;
+}
+
+img{
+  border-radius: 50%;
+  min-width: 100px;
+}
+
+span{
+  color: black;
+  font-weight: 900;
+}
+
+.button-change{
+  display: flex;
+  align-self: flex-end;
+  
+}
+
+button{
+  background-color: white;
+  min-width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  
+}
