@@ -1,10 +1,8 @@
 import React from 'react'
 
-const CardUser = ({user}) => {
+const CardUser = ({user,change}) => {
 
-    const refresh = () =>{
-        window.location.replace('');
-    }
+    
 
 
     return (
@@ -20,7 +18,7 @@ const CardUser = ({user}) => {
             </div>
 
             <div className='button-change'>
-                <button onClick={refresh}>
+                <button onClick={change}>
                     <ion-icon name="refresh-outline"></ion-icon>
                 </button>
 
